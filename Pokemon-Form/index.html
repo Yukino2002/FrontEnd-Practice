@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign-up Form!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--importing google api for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Pokemon Logo" width="130">
+    </header>
+    <form>
+
+        <!--Personal Details-->
+        <div>
+            <label for="username">Trainer:</label>
+            <input type="text" id="username" placeholder="Enter your name..." required>
+            <br>
+            <p>Select your gender...</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+
+            <p>Choose your starting pokemon...</p>
+            <input type="radio" id="charmander" name="pokemon" required>
+            <label for="charmander">Charmander</label>
+            <br>
+            <input type="radio" id="bulbasur" name="pokemon" required>
+            <label for="bulbasur">Bulbasur</label>
+            <br>
+            <input type="radio" id="squirtle" name="pokemon" required>
+            <label for="squirtle">Squirtle</label>
+        </div>
+
+        <!--Region of Interest-->
+        <div>
+            <p>Select the regions you would like to visit...</p>
+            <input type="checkbox" id="kyoto">
+            <label for="kyoto">Kyoto</label>
+            <br>
+            <input type="checkbox" id="johto">
+            <label for="johto">Johto</label>
+            <br>
+            <input type="checkbox" id="sinnoh">
+            <label for="sinnoh">Sinnoh</label>
+        </div>
+
+        <!--Contact details-->
+        <div>
+            <fieldset>
+                <legend>Trainer Info</legend>
+                <input type="email" id="email" placeholder="Enter your email..." required>
+                <span class="tick"></span>
+                <input type="telephone" id="telephone" placeholder="Enter your phone number..." required>
+                <span class="tick"></span>
+            </fieldset>
+        </div>
+
+        <!--Contact method-->
+        <div>
+            <p>How would you prefer to be contacted?</p>
+            <select>
+                <option>Email</option>
+                <option>Phone number</option>
+            </select>
+            <input type="submit" value="Dive into the world of Pokemon!">
+        </div>
+
+    </form>
+</body>

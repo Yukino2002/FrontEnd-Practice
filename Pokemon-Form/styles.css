@@ -1,0 +1,145 @@
+/****** MAIN BODY ******/
+
+body{
+    background-color: #141414;
+    margin: 0;
+    font-family: 'Lucida Sans';
+}
+
+header{
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+form{
+    color: #eeeeee;
+    padding: 18px;
+}
+
+form p{
+    font-size: 18px;
+    letter-spacing: 0.5x;
+}
+
+form label[for="username"]{
+    font-size: 20px;
+}
+
+input[type="text"]{
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #222;
+}
+
+/****** RADIOBOX ******/
+
+/* to insert our custom designed radio buttons */
+/* we must first make the existing buttons invisible, as we cannot modify their pre existing look */
+/* for this make the opacity as zero */
+
+input[type="radio"]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+label[for="male"], label[for="female"], 
+label[for="charmander"], label[for="bulbasur"], label[for="squirtle"]{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 26px;
+
+    /* The background declaration is to use the image to import the check styled boxes */
+    background: url(img/checks.png) no-repeat;
+    /* Using the coordinates or pixels to specify which checkbox we wanted */
+    background-position: 0 -32px;
+    line-height: 20px;
+    /* We can use this declaration to change the shape of the mouse icon on hovering */
+    cursor: pointer;
+}
+
+/* This is the pseudo class for changing display qualities on being selected */
+/* We change the color of the label and the icon in background */
+
+input:checked + label[for="male"], input:checked + label[for="female"], 
+input:checked + label[for="charmander"], input:checked + label[for="bulbasur"], input:checked + label[for="squirtle"]{
+    background-position: 0 0;
+    color: #ce1010;
+} 
+
+/****** CHECKBOX ******/
+
+input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+label[for="kyoto"], label[for="johto"], label[for="sinnoh"]{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 26px;
+
+    background: url(img/checks.png) no-repeat;
+    background-position: 0 -99px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input:checked + label[for="kyoto"], input:checked + label[for="johto"], input:checked + label[for="sinnoh"]{
+    background-position: 0 -66px;
+    color: #ce1010;
+}
+
+/****** FIELDSET ******/
+
+fieldset{
+    padding: 20px;
+    margin: 20px 0;
+    border: 3px solid #222;
+}
+
+legend{
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+input[type="email"], input[type="telephone"]{
+    display: block;
+    padding: 10px 10px 10px 55px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+    border: 2px solid #222;
+    background: url(img/inputs.png) no-repeat;
+    background-color: #222;
+}
+
+input[type="email"]{
+    background-position: 7px 7px;
+}
+
+input[type="telephone"]{
+    background-position: 7px -59px;
+}
+
+/* SELECT BOXES */
+
+select{
+    -o-appearance: none;
+    appearance: none;
+
+    display: block;
+    margin: 30px 0px;
+    padding: 12px 156px 12px 10px;
+    background: url(img/select.png) no-repeat 95% center;
+    background-color: #222;
+    color: #636c72;
+    border-radius: 4px;
+    border: 2px solid #222;
+}
+/* VALIDATION STYLING */
